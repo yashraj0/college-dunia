@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* general classes ************************************************************/
+.f_w_500 {
+  font-weight: 500;
+}
+
+.f_w_600 {
+  font-weight: 600;
+}
+
+.f_w_700 {
+  font-weight: 700;
+}
+
+.f_12 {
+  font-size: 12px;;
+}
+
+.f_14 {
+  font-size: 14px;;
+}
+
+.f_18 {
+  font-size: 18px;
+}
+
+.color_dark_grey {
+  color : #353131;
+}
+
+.color_grey {
+  color: grey;
+}
+
+.color_green {
+  color: #37b396;
+}
+
+.color_white {
+  color: white;
+}
+
+.p_2 {
+  padding: 2rem;
+}
+
+.pr_1 {
+  padding-right: 1rem;
+}
+
+.mr_02 {
+  margin-right: 0.2rem;
+}
+
+.mt_02 {
+  margin-top: 0.2rem;
+}
+
+.mt_05 {
+  margin-top: 0.5rem;
+}
+
+.mb_02 {
+  margin-bottom: 0.2rem;
+}
+
+.mb_05 {
+  margin-bottom: 0.5rem;
+}
+
+.row_flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_jcsb {
+  justify-content: space-between;
+}
+
+.flex_jcfe {
+  justify-content: flex-end;
+}
+
+.flex_aic {
+  align-items: center;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_shrink_zero {
+  flex-shrink: 0;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+.text_align_right {
+  text-align: right;
+}
+
+/*******************************************************************************/
+
+#main {
+  position: relative;
+}
+
+.college_row {
+  margin: 0 0.5rem 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.college {
+  box-shadow: 0px 0px 2px #bbbbbb;
+  background: white;
+  border: 1px solid #e6e2e2;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  position: relative;
+  width: 637px;
+}
+
+.college_top {
+  height: 233px;
+  position: relative;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.college_image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #171414b5;
+}
+
+.promoted_tag {
+  position: absolute;
+  top: -17px;
+  right: 0;
+  width: 25%;
+  height: 34px;
+  background-color: #68a7ff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 7px 0;
+  color: white;
+  z-index: 100;
+  font-weight: 500;
+}
+
+.promoted_tag::before {
+  position: absolute;
+  border-radius: 3px;
+  content: '';
+  left: -17px;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 17px;
+  border-color: transparent transparent #68a7ff;
+}
+
+.promoted_tag::after {
+  position: absolute;
+  border-radius: 3px;
+  content: '';
+  left: -17px;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 17px;
+  border-color: #68a7ff transparent transparent;
+}
+
+.rating {
+  position: absolute;
+  top: calc(17px + 1rem);
+  width: 80px;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  right: 1rem;
+  background-color: #f5a626;
+  color: white;
+}
+
+.tags_ranking {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tag {
+  margin: 0 0.5rem 1rem 0;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.college_bottom {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.college_info {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.discount {
+  position: relative;
+  margin-left: 1rem;
+  background-color: #dd1c26;
+  color: white;
+  padding: 0.1rem 0.3rem;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.discount::after {
+  position: absolute;
+  content: '';
+  left: -17px;
+  top: 0;
+  width: 0px;
+  border-radius: 2px;
+  height: 0px;
+  border-style: solid;
+  border-width: 9px;
+  z-index: 1;
+  border-color: transparent #dd1c26 transparent transparent;
+}
+
+.discount::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+  z-index: 2;
+}
+
+.fees {
+  font-size: 20px;
+  color: #dd1c26;
+  font-weight: 600;
+}
+
+.login_banner {
+  background-color: #ccf5e7a8;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 0.5rem 1rem;
+  flex: 0 0 65%;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.amenities {
+  height: fit-content;
+}
+
+.amenity {
+  margin-left: 0.8rem;
+  position: relative;
+}
+
+.amenity::after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #37b396;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -9px;
+}
