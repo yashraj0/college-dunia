@@ -1,3 +1,16 @@
+## Installation
+
+Use the package manager [yarn](http://classic.yarnpkg.com/en/) to install the required dependencies listed in package.json / package-lock.json files . Navigate to the root dir of the project, open the terminal and do :
+
+```bash
+yarn install
+```
+After this, do
+```bash
+yarn start
+```
+and the app should start on [localhost](http://localhost:3000/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
