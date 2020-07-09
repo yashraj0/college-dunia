@@ -198,7 +198,7 @@ const App = () => {
   }
 
   return (
-    <div id='main'>
+    <div className='main'>
       <div className='p_2 color_dark_grey f_w_500 f_18'>
         { loader ? 'Fetching records...' : 'Colleges in North India' }
       </div>

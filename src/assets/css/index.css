@@ -115,8 +115,8 @@ body {
 
 /*******************************************************************************/
 
-#main {
-  position: relative;
+.main {
+  padding-bottom: 2rem;
 }
 
 .college_row {
